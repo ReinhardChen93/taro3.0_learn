@@ -1,0 +1,64 @@
+@import "~taro-ui/dist/style/index.scss"; // 引入组件样式 - 方式二
+@import "./base.scss";
+@import "./variable_overrides.scss";
+
+page {
+  height: calc(100vh - env(safe-area-inset-bottom));
+  width: 100vw;
+}
+
+.at-tabs__item--active {
+  color: $primary-color;
+}
+.at-tabs__item-underline {
+  background-color: $primary-color;
+}
+.circling {
+  animation: circling 20s infinite linear;
+  &.z-pause {
+    animation-play-state: paused;
+  }
+}
+
+.flex {
+  display: flex;
+}
+.flex-item {
+  flex: 1;
+}
+.flex-align-center {
+  align-items: center;
+}
+.flex-between {
+  justify-content: space-between;
+}
+.flex-between {
+  justify-content: space-between;
+}
+.flex-row {
+  flex-direction: row;
+}
+.flex-column {
+  flex-direction: column;
+}
+
+// reset taro ui
+.at-search-bar__action {
+  background-color: $primary-color;
+}
+
+
+.at-button--primary {
+  background: $color-brand;
+  color: #FFFFFF;
+  border: none;
+}
+
+@keyframes circling {
+  0% {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
