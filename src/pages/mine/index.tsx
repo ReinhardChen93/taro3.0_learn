@@ -14,7 +14,7 @@ type PropsType = {
 }
 
 type PageState = {
-  current: number;
+  current: any;
   showLoading: boolean;
   bannerList: Array<{
     typeTitle: string;
@@ -83,12 +83,57 @@ class Index extends Component<PropsType, PageState> {
   render() {
     return (
       <View className='container'>
-        <view>
-          
-        </view>
+        <View className='tree_box'>
+          <View className='tree'>
+            <View className='toptree'>
+            <View className='leaves'></View>
+            <View className='leaves'></View>
+            <View className='leaves'></View>
+            <View className='leaves'></View>
+            <View className='leaves'></View>
+            <View className='leaves'></View>
+            <View className='leaves'></View>
+            <View className='leaves'></View>
+            <View className='leaves'></View>
+            <View className='leaves'></View>
+            <View className='leaves'></View>
+            <View className='leaves'></View>
+            <View className='leaves'></View>
+            <View className='leaves'></View>
+            <View className='leaves'></View>
+            <View className='leaves'></View>
+            <View className='leaves'></View>
+            <View className='leaves'></View>
+            <View className='leaves'></View>
+            <View className='leaves'></View>
+            <View className='leaves'></View>
+            <View className='leaves'></View>
+            <View className='leaves'></View>
+            <View className='leaves'></View>
+            <View className='leaves'></View>
+            <View className='leaves'></View>
+            <View className='leaves'></View>
+            <View className='leaves'></View>
+            <View className='leaves'></View>
+            <View className='leaves'></View>
+            <View className='leaves'></View>
+            <View className='leaves'></View>
+            <View className='leaves'></View>
+            <View className='leaves'></View>
+            <View className='leaves'></View>
+            <View className='leaves'></View>
+            <View className='leaves'></View>
+            </View>
+
+            <View className='trunk'>
+              <View className='branch'></View>
+              <View className='branch'></View>
+            </View>
+          </View>
+        </View>
         <AtTabBar
           fixed
-          selectedColor="#FEDD64"
+          selectedColor='#FEDD64'
           tabList={[
             { title: "", iconType: "home" },
             { title: "", iconType: "bullet-list" }

@@ -3,3 +3,464 @@
   width: 100%;
   height: 100%;
 }
+
+$back: white;
+$border: rgb(86, 86, 136);
+$dark-leaves: rgba(51, 83, 44, 0.76);
+$medium-leaves: rgba(151, 185, 112, 0.76);
+$light-leaves: rgba(198, 204, 109, 0.788);
+$extra-light-leaves: rgba(243, 245, 136, 0.788);
+$fruit-leaves: rgba(228, 183, 241, 0.788);
+$truck: rgb(56, 21, 21);
+
+.tree_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tree{ 
+  position: relative;
+  border-style: none;
+  border-color: blue;
+  height: 100vmin;
+  width: 60vmin;
+}
+
+.trunk{
+  z-index: -1;
+  position: absolute;    
+  bottom: 0em;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: none;
+  background-color: $truck;
+  height: 50vmin;
+  width: 5vmin;
+  border-radius: 63% 37% 31% 69% / 60% 74% 26% 40% ;
+}
+
+.branch{
+  position: relative;
+  border-style: none;
+  border-color: rgb(206, 177, 11);
+  background-color: $truck;
+}
+
+.branch:nth-child(1){
+  height: 19vmin;
+  width: 2vmin;
+  top: 2%;
+  right: -120%;
+  transform: rotate(+30deg);
+  border-radius: 63% 37% 31% 69% / 60% 74% 26% 40% ;
+}
+
+.branch:nth-child(2){
+  height: 15vmin;
+  width: 2vmin;
+  top: 0.5%;
+  right: +70%;
+  transform: rotate(-30deg);
+  border-radius: 63% 37% 31% 69% / 60% 74% 26% 40% ;
+}
+
+.toptree{
+  position: absolute;    
+  top: 0em;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  height: 80vmin;
+  width: auto;
+  border-style: none;
+  border-color: rgb(207, 77, 190);
+}
+
+.leaves{
+  position: absolute;
+  border-style: none;
+  border-color: rgb(209, 92, 184);
+}
+
+.leaves:nth-child(1){
+  height: 15vmin;
+  width: 15vmin;
+  bottom: 20%;
+  right: 20%;
+  transform: rotate(+30deg);
+  border-radius: 50%;
+  background-color: $dark-leaves;
+}
+.leaves:nth-child(2){
+  height: 15vmin;
+  width: 15vmin;
+  bottom: 10%;
+  right: 40%;
+  transform: rotate(+30deg);
+  border-radius: 50%;
+  background-color: $dark-leaves;
+}
+
+.leaves:nth-child(3){
+  height: 15vmin;
+  width: 15vmin;
+  bottom: 0%;
+  right: 22%;
+  transform: rotate(+30deg);
+  border-radius: 50%;
+  background-color: $dark-leaves;
+}
+
+.leaves:nth-child(4){
+  height: 15vmin;
+  width: 15vmin;
+  bottom: 0%;
+  right: 50%;
+  transform: rotate(+30deg);
+  border-radius: 50%;
+  background-color: $dark-leaves;
+}
+
+.leaves:nth-child(5){
+  height: 15vmin;
+  width: 15vmin;
+  bottom: 22%;
+  right: 55%;
+  transform: rotate(+30deg);
+  border-radius: 50%;
+  background-color: $dark-leaves;
+}
+
+.leaves:nth-child(6){
+  height: 12vmin;
+  width: 12vmin;
+  bottom: 38%;
+  right: 72%;
+  transform: rotate(+30deg);
+  border-radius: 50%;
+  background-color: $dark-leaves;
+}
+
+.leaves:nth-child(7){
+  height: 15vmin;
+  width: 15vmin;
+  bottom: 8%;
+  right: 74%;
+  transform: rotate(+30deg);
+  border-radius: 50%;
+  background-color: $dark-leaves;
+}
+
+.leaves:nth-child(8){
+  height: 15vmin;
+  width: 15vmin;
+  bottom: 8%;
+  right: -1%;
+  transform: rotate(+30deg);
+  border-radius: 50%;
+  background-color: $dark-leaves;
+}
+
+.leaves:nth-child(9){
+  height: 12vmin;
+  width: 12vmin;
+  bottom: 32%;
+  right: 2%;
+  transform: rotate(+30deg);
+  border-radius: 50%;
+  background-color: $dark-leaves;
+}
+
+.leaves:nth-child(10){
+  height: 15vmin;
+  width: 15vmin;
+  bottom: 32%;
+  right: 34%;
+  transform: rotate(+30deg);
+  border-radius: 50%;
+  background-color: $dark-leaves;
+}
+
+.leaves:nth-child(11){
+  height: 14vmin;
+  width: 14vmin;
+  bottom: 47%;
+  right: 52%;
+  transform: rotate(+30deg);
+  border-radius: 50%;
+  background-color: $dark-leaves;
+}
+
+.leaves:nth-child(12){
+  height: 14vmin;
+  width: 14vmin;
+  bottom: 45%;
+  right: 15%;
+  transform: rotate(+30deg);
+  border-radius: 50%;
+  background-color: $dark-leaves;
+}
+
+.leaves:nth-child(13){
+  height: 13vmin;
+  width: 13vmin;
+  bottom: 58%;
+  right: 33%;
+  transform: rotate(+30deg);
+  border-radius: 50%;
+  background-color: $dark-leaves;
+}
+
+.leaves:nth-child(14){
+  height: 13vmin;
+  width: 13vmin;
+  bottom: 28%;
+  right: 73%;
+  transform: rotate(+30deg);
+  border-radius: 50%;
+  background-color: $dark-leaves;
+}
+
+.leaves:nth-child(15){
+  height: 10vmin;
+  width: 10vmin;
+  bottom: 28%;
+  right: 73%;
+  transform: rotate(+30deg);
+  border-radius: 50%;
+  background-color: $medium-leaves;
+}
+
+.leaves:nth-child(16){
+  height: 10vmin;
+  width: 10vmin;
+  bottom: 48%;
+  right: 28%;
+  transform: rotate(+30deg);
+  border-radius: 50%;
+  background-color: $medium-leaves;
+}
+
+.leaves:nth-child(17){
+  height: 10vmin;
+  width: 10vmin;
+  bottom: 32%;
+  right: 34%;
+  transform: rotate(+30deg);
+  border-radius: 50%;
+  background-color: $medium-leaves;
+}
+
+.leaves:nth-child(18){
+  height: 10vmin;
+  width: 10vmin;
+  bottom: 12%;
+  right: 22%;
+  transform: rotate(+30deg);
+  border-radius: 50%;
+  background-color: $medium-leaves;
+}
+
+.leaves:nth-child(19){
+  height: 10vmin;
+  width: 10vmin;
+  bottom: 9%;
+  right: 62%;
+  transform: rotate(+30deg);
+  border-radius: 50%;
+  background-color: $medium-leaves;
+}
+
+.leaves:nth-child(20){
+  height: 10vmin;
+  width: 10vmin;
+  bottom: 55%;
+  right: 65%;
+  transform: rotate(+30deg);
+  border-radius: 50%;
+  background-color: $medium-leaves;
+}
+
+.leaves:nth-child(21){
+  height: 10vmin;
+  width: 10vmin;
+  bottom: 55%;
+  right: 36%;
+  transform: rotate(+30deg);
+  border-radius: 50%;
+  background-color: $medium-leaves;
+}
+
+.leaves:nth-child(22){
+  height: 9vmin;
+  width: 9vmin;
+  bottom: 25%;
+  right: 6%;
+  transform: rotate(+30deg);
+  border-radius: 50%;
+  background-color: $light-leaves;
+}
+
+.leaves:nth-child(23){
+  height: 9vmin;
+  width: 9vmin;
+  bottom: 29%;
+  right: 10%;
+  transform: rotate(+30deg);
+  border-radius: 50%;
+  background-color: $light-leaves;
+}
+
+.leaves:nth-child(24){
+  height: 9vmin;
+  width: 9vmin;
+  bottom: 39%;
+  right: 85%;
+  transform: rotate(+30deg);
+  border-radius: 50%;
+  background-color: $light-leaves;
+}
+
+.leaves:nth-child(25){
+  height: 9vmin;
+  width: 9vmin;
+  bottom: 40%;
+  right: 50%;
+  transform: rotate(+30deg);
+  border-radius: 50%;
+  background-color: $light-leaves;
+}
+
+.leaves:nth-child(26){
+  height: 9vmin;
+  width: 9vmin;
+  bottom: 20%;
+  right: 43%;
+  transform: rotate(+30deg);
+  border-radius: 50%;
+  background-color: $light-leaves;
+}
+
+.leaves:nth-child(27){
+  height: 9vmin;
+  width: 9vmin;
+  bottom: 5%;
+  right: 49%;
+  transform: rotate(+30deg);
+  border-radius: 50%;
+  background-color: $light-leaves;
+}
+
+.leaves:nth-child(28){
+  height: 9vmin;
+  width: 9vmin;
+  bottom: 65%;
+  right: 25%;
+  transform: rotate(+30deg);
+  border-radius: 50%;
+  background-color: $light-leaves;
+}
+
+.leaves:nth-child(29){
+  height: 7vmin;
+  width: 7vmin;
+  bottom: 65%;
+  right: 22%;
+  transform: rotate(+30deg);
+  border-radius: 50%;
+  background-color: $extra-light-leaves;
+}
+
+.leaves:nth-child(30){
+  height: 7vmin;
+  width: 7vmin;
+  bottom: 29%;
+  right: 32%;
+  transform: rotate(+30deg);
+  border-radius: 50%;
+  background-color: $extra-light-leaves;
+}
+
+.leaves:nth-child(31){
+  height: 7vmin;
+  width: 7vmin;
+  bottom: 34%;
+  right: 52%;
+  transform: rotate(+30deg);
+  border-radius: 50%;
+  background-color: $extra-light-leaves;
+}
+
+.leaves:nth-child(32){
+  height: 7vmin;
+  width: 7vmin;
+  bottom: 54%;
+  right: 72%;
+  transform: rotate(+30deg);
+  border-radius: 50%;
+  background-color: $extra-light-leaves;
+}
+
+.leaves:nth-child(33){
+  height: 7vmin;
+  width: 7vmin;
+  bottom: 24%;
+  right: 79%;
+  transform: rotate(+30deg);
+  border-radius: 50%;
+  background-color: $extra-light-leaves;
+}
+
+.leaves:nth-child(33){
+  height: 7vmin;
+  width: 7vmin;
+  bottom: 14%;
+  right: 19%;
+  transform: rotate(+30deg);
+  border-radius: 50%;
+  background-color: $extra-light-leaves;
+}
+
+.leaves:nth-child(34){
+  height: 7vmin;
+  width: 7vmin;
+  bottom: 14%;
+  right: 69%;
+  transform: rotate(+30deg);
+  border-radius: 50%;
+  background-color: $extra-light-leaves;
+}
+
+.leaves:nth-child(35){
+  height: 7vmin;
+  width: 7vmin;
+  bottom: 34%;
+  right: 69%;
+  transform: rotate(+30deg);
+  border-radius: 50%;
+  background-color: $fruit-leaves;
+}
+
+.leaves:nth-child(36){
+  height: 7vmin;
+  width: 7vmin;
+  bottom: 12%;
+  right: 27%;
+  transform: rotate(+30deg);
+  border-radius: 50%;
+  background-color: $fruit-leaves;
+}
+
+.leaves:nth-child(37){
+  height: 7vmin;
+  width: 7vmin;
+  bottom: 42%;
+  right: 21%;
+  transform: rotate(+30deg);
+  border-radius: 50%;
+  background-color: $fruit-leaves;
+}
