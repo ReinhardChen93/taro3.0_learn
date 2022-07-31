@@ -1,8 +1,7 @@
 import { AnyAction } from 'redux';
 import { EffectsCommandMap } from 'dva-core';
-import Taro, { showToast } from '@tarojs/taro';
-import * as API from './service';
-
+// import * as API from './service';
+import { showToast } from '@tarojs/taro';
 
 export type Effect = (
   action: AnyAction,
@@ -18,19 +17,19 @@ export type Reducer<S = any, A extends Action = AnyAction> = (
   action: A
 ) => S;
 
-export type homeState = {
+export type indexState = {
   data: any;
 
 };
 
 export interface ModelType {
   namespace: string;
-  state: homeState;
+  state: indexState;
   effects: {
     effectsDomeName: Effect;
   };
   reducers: {
-    save: Reducer<homeState>;
+    save: Reducer<indexState>;
   }
 
 }
@@ -43,7 +42,7 @@ const Model: ModelType = {
   effects: {
     // 此处换成自己的方法名称
     * effectsDomeName({ params, callBack }, { call, put }) {
-      //Api是request封装的请求方法(如果有需要下一期我再下一篇axios在taro的封装
+      // Api是request封装的请求方法(如果有需要下一期我再下一篇axios在taro的封装
       // const response = yield call(API.demo, {});
       // if (Response.stattus === 200 && Response.data.status === 0) {
       //   callBack(response.data.result)
@@ -60,20 +59,6 @@ const Model: ModelType = {
       //     }
       //   });
       // }
-      console.log('first', params)
-      Taro.showLoading({
-        title: '正在加载'
-      })
-      const response = yield call(() => {
-        return new Promise((resolve, reject) => {
-         setTimeout(() => {
-          Taro.hideLoading()
-            resolve('成功')
-          }, 600);
-        })
-
-      }, {});
-      return response
     },
     subscriptions: {
 

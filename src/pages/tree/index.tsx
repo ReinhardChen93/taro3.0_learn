@@ -7,7 +7,7 @@ import { AtTabBar } from 'taro-ui'
 import './index.scss'
 
 type PropsType = {
-  mineModel: {
+  treeModel: {
     data: string
   },
   loading: any
@@ -25,17 +25,17 @@ type PageState = {
 };
 
 // 将src/page/index/model.ts文件连接到src/page/index/index.tsx文件中
-// 绑定mineModel
+// 绑定treeModel
 @connect((
-  { loading, mineModel }: {
+  { loading, treeModel }: {
     loading: { effects: Record<string, boolean> };
-    mineModel: {
+    treeModel: {
       data: string
     }
   }
 ) => ({
-  loadingStatus: loading.effects['mineModel/effectsDomeName'],
-  mineModel
+  loadingStatus: loading.effects['treeModel/effectsDomeName'],
+  treeModel
 }))
 
 
@@ -59,7 +59,7 @@ class Index extends Component<PropsType, PageState> {
   componentDidShow() {
     console.log('props :>> ', this.props);
     showToast({
-      title: this.props.mineModel.data,
+      title: this.props.treeModel.data,
       icon: 'success',
       duration: 2000
     })

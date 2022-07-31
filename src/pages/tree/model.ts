@@ -17,25 +17,25 @@ export type Reducer<S = any, A extends Action = AnyAction> = (
   action: A
 ) => S;
 
-export type homeState = {
+export type treeState = {
   data: any;
 
 };
 
 export interface ModelType {
   namespace: string;
-  state: homeState;
+  state: treeState;
   effects: {
     effectsDomeName: Effect;
   };
   reducers: {
-    save: Reducer<homeState>;
+    save: Reducer<treeState>;
   }
 
 }
 
 const Model: ModelType = {
-  namespace: 'mineModel',
+  namespace: 'treeModel',
   state: {
     data: '测试model是否配置成功'
   },

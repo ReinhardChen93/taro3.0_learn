@@ -1,127 +1,33 @@
 @import '../../styles/base.scss';
-
 .container {
+  position: relative;
   width: 100%;
   height: 100%;
-  padding: 30rpx;
-  box-sizing: border-box;
-
-  .header {
-    width: 100%;
-    margin-bottom: 20rpx;
-
-    .time {
-      font-weight: 500;
-      font-size: 48rpx;
-      line-height: 58rpx;
-
-    }
+  background-color: #F5F5F5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .clock {
+    margin-top: 252px;
+    width: 388.5px;
+    height: 430px;
+    background-image: url('../../assets/imgs/clock.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 
-  .body {
-    width: 100%;
-    color: #000000;
-
-    .form_content {
-      width: 100%;
-
-      .form_item {
-        display: flex;
-        flex-direction: column;
-
-        .lable {
-          font-weight: 500;
-          font-size: 36rpx;
-          line-height: 44rpx;
-        }
-
-        .value {
-          width: 100%;
-          box-sizing: border-box;
-          background: #FFFFFF;
-          box-shadow: 0px 8rpx 32rpx rgba(220, 220, 220, 0.5);
-          border-radius: 24rpx;
-          min-height: 136rpx;
-          display: flex;
-          align-items: center;
-          margin: 16rpx 0;
-
-
-          .at-input {
-            &::after {
-              border: none;
-            }
-          }
-
-
-        }
-
-        .btn_content {
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: space-between;
-          padding: 16rpx 0;
-          .btn {
-            box-shadow: 0px 6rpx 26rpx rgba(220, 220, 220, 0.5);
-            border-radius: 24rpx;
-            padding: 16rpx 0;
-            color: #000000;
-            font-size: 32rpx;
-            width: 328rpx;
-            text-align: center;
-          }
-
-          .actvie {
-            background: #FEDD64;
-          }
-
-        }
-
-        .btn_content_grid {
-          display: grid;
-          grid-template-columns: repeat(4, 1fr);
-          grid-row-gap: 20rpx;
-          grid-column-gap: 36rpx;
-          padding: 16rpx 0;
-          .btn {
-            box-shadow: 0px 6rpx 26rpx rgba(220, 220, 220, 0.5);
-            border-radius: 24rpx;
-            padding: 16rpx 0;
-            color: #000000;
-            font-size: 32rpx;
-            text-align: center;
-          }
-
-          .actvie {
-            background: #FEDD64;
-          }
-        }
-      }
-
-      .submit {
-        margin-top: 180rpx;
-      }
-
-      .at-button--primary {
-        background: #FEDD64;
-        color: #000000;
-        border: none;
-        font-size: 40px;
-      }
-    }
-
-    .at-form {
-      &::after {
-        border: none
-      }
-    }
-  }
-
-  .footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding-bottom: env(safe-area-inset-bottom);
+  .btn {
+    position: absolute;
+    top: 968px;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 264px;
+    background-color: #A48252;
+    border-radius: 56px;
+    color: #FFF;
+    
   }
 }

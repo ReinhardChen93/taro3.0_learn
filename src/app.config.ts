@@ -2,7 +2,9 @@ export default defineAppConfig({
   pages: [
     'pages/welcome/index',
     'pages/index/index',
-    'pages/mine/index'
+    'pages/cookingInformationEntry/index',
+    'pages/tree/index',
+    
   ],
   window: {
     backgroundTextStyle: 'light',
